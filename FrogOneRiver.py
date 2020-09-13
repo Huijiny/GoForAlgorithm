@@ -8,9 +8,7 @@ def solution(X, A):
             yon[num-1] = True
             time[num-1] = i
             match += 1
-            print(match)
             if match == X:
-                print(match)
                 return max(time)
     return -1
 

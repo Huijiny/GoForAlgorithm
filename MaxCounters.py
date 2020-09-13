@@ -8,13 +8,11 @@ def solution(N, A):
             idx = num-1
             
             if timer[idx]< max_:
-                print(max_)
                 timer[idx] = max_
 
             timer[idx] += 1
 
-            if tmp + max_ < timer[idx]:
-                print(tmp+max_, timer[idx])
+            if tmp + max_ < timer[idx]: #이 줄 잘 이해안감.
                 tmp = timer[idx]-max_
 
         elif num == N+1 :
